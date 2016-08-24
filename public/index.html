@@ -3,13 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Angular </title>
-  <link rel="stylesheet" type="text/css" href="public/vendor/bootstrap/dist/css/bootstrap.css" />
+  <title>Pentapark</title>
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/.tmp/app.css">
+  <!-- endinject -->
 </head>
-<body np-app="pentapark">
-  Hello world!
-  <script src="public/vendor/angular/angular.js"></script>
-  <script src="public/vendor/angular-ui-router/release/angular-ui-router.js"></script>
-  <script src="public/app/app.js"></script>
+<body>
+  <!-- bower:js -->
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <!-- endbower -->
+
+  <!-- inject:js -->
+  <script src="/public/app/app.js"></script>
+  <script src="/public/app/test/test.js"></script>
+  <!-- endinject -->
+
+  Hello world 2!
 </body>
 </html>

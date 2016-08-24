@@ -1,22 +1,24 @@
 {
-  "name": "angular",
-  "description": "",
-  "main": "server.js",
+  "name": "Pentapark",
+  "description": "Pentalog parking app.",
   "authors": [
     "Ed"
   ],
   "license": "ISC",
   "keywords": [
-    "training"
+    "training",
+    "pentalog",
+    "parking"
   ],
-  "homepage": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
   "dependencies": {
     "angular": "1.5.7",
     "bootstrap": "3.x.x",
