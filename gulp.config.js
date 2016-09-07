@@ -1,14 +1,4 @@
 module.exports = function() {
-  var config = {
-    less: ['./public/styles/*.less'],
-    cssDest: './.tmp',
-    temp: './.tmp'
-  };
-
-  return config;
-};
-
-module.exports = function() {
   var public = './public/';
   var app = public + 'app/';
   var temp = './.tmp/';
@@ -20,9 +10,9 @@ module.exports = function() {
       './public/app/**/*.js'
     ],
     // linter check public folder js files
-    public: [
-      './public/app/**/*.js'
-    ],
+    //public: [
+    //  './public/app/**/*.js'
+    //],
     // linter check test folder js files
     test: [
       './test/**/*.js'
