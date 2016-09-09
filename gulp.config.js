@@ -24,7 +24,7 @@ module.exports = function() {
       directory: './bower_components',
       ignorePath: '../../'
     },
-    index: public + "index.html",
+    index: public + "index.jade",
     public: public,
     inject: [
       app + '**/app.js',
