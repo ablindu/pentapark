@@ -61,8 +61,8 @@ gulp.task('wiredep', ['styles'], function() {
   return gulp
     .src(config.index)
     .pipe(wiredep(options))
-    .pipe($.inject(gulp.src(config.inject).pipe($.if(args.verbose, $.print()))))
-    .pipe(gulp.dest(config.public));
+    .pipe($.inject(gulp.src(config.inject).pipe($.if(args.verbose, $.print())), { addRootSlash: false }))
+    .pipe(gulp.dest(config.views));
 });
 
 gulp.task('serve-dev', ['wiredep'], function() {
