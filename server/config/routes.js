@@ -1,10 +1,11 @@
 module.exports = function(app, config) {
-    app.all('/*', function(request, response, next) {
-      console.log('roothpath', config.rootPath);
-      response.sendFile('index.jade', { root: config.rootPath });
-  	});
 
-    app.get('*',function(req, res){
-      res.render('index');
-    });
+  //jade partials request
+  app.get('/partials/*', function(req, res) {
+    res.render('../../public/app/' + req.params[0]);
+  });
+
+  app.get('*', function(req, res) {
+    res.render('index');
+  });
 };

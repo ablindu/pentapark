@@ -9,11 +9,6 @@ module.exports = function() {
     alljs: [
       './public/app/**/*.js'
     ],
-    // linter check public folder js files
-    //public: [
-    //  './public/app/**/*.js'
-    //],
-    // linter check test folder js files
     test: [
       './test/**/*.js'
     ],
@@ -24,8 +19,9 @@ module.exports = function() {
       directory: './bower_components',
       ignorePath: '../../'
     },
-    index: public + "index.jade",
+    index: public + 'views/index.jade',
     public: public,
+    views: public + 'views',
     inject: [
       app + '**/app.js',
       app + '**/*.module.js',
