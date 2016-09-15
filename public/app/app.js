@@ -4,8 +4,10 @@
   angular
     .module('pentapark', [
       'ui.router',
+      'shared',
       'employee',
-      'admin'
+      'admin',
+      'authentication'
     ]) // setter
     .config(configSetup);
 
