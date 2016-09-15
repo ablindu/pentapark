@@ -8,13 +8,11 @@
     "parking"
   ],
   "authors": [
-    "Ed"
+    "Bogdan Savin"
   ],
   "license": "ISC",
   "devDependencies": {
-    "bower": "^1.7.9",
     "del": "^2.2.2",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-if": "^2.0.0",
     "gulp-inject": "^4.0.0",
@@ -29,10 +27,8 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
-    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "jade": "^1.11.0",
-    "path": "^0.12.7",
-    "serve-static": "^1.11.1"
+    "path": "^0.12.7"
   }
 }
