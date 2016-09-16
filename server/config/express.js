@@ -1,6 +1,5 @@
 var express = require('express'),
-    bodyParser = require('body-parser'),
-    cookieParser = require('cookie-parser');
+    bodyParser = require('body-parser');
 
 module.exports = function(app, config) {
   app.set('views', config.rootPath + 'views');
@@ -16,7 +15,6 @@ module.exports = function(app, config) {
   };
 
   app.use(allowCrossDomain);
-  app.use(cookieParser());
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
 };
