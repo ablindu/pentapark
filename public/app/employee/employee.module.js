@@ -5,13 +5,12 @@
 
   function configSetup($stateProvider) {
     $stateProvider
-    .state('shared.employee',{
-        url:'/employee',
+    .state('shared.employee', {
+        url:'employee',
         controller: 'EmployeeController',
         controllerAs: 'employee',
         templateUrl:'public/app/employee/partials/employee'
     })
   }
-
 
 })();

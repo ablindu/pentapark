@@ -1,12 +1,10 @@
 var express = require('express'),
-    bodyParser = require('body-parser'),
-    cookieParser = require('cookie-parser');
+    bodyParser = require('body-parser');
 
 module.exports = function(app, config) {
   app.set('views', config.rootPath + 'views');
   app.set('view engine', 'jade');
-	app.use('/', express.static(config.rootPath));
-	app.use(express.static(__dirname + '/../../'));
+  app.use(express.static(__dirname + '/../../'));
 
   //CORS middleware
 var allowCrossDomain = function(req,res,next){
@@ -18,7 +16,6 @@ var allowCrossDomain = function(req,res,next){
 };
 
 app.use(allowCrossDomain);
-app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 };

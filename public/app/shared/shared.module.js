@@ -1,17 +1,17 @@
 (function () {
   angular
-    .module('shared', [])
+    .module('shared', ['header'])
     .config(configSetup);
 
   function configSetup($stateProvider) {
     $stateProvider
-    .state('shared',{
-        url:'/',
-        abstract: true,
-        controller:'SharedController',
-        controllerAs: 'shared',
-        templateUrl:'public/app/shared/partials/shared'
-    })
+    .state('shared', {
+      abstract: true,
+      url: '/app',
+      controller: 'SharedController',
+      controllerAs: 'shared',
+      templateUrl: 'public/app/shared/partials/shared'
+    });
   }
 
 

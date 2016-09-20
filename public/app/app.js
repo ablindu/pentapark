@@ -5,9 +5,9 @@
     .module('pentapark', [
       'ui.router',
       'shared',
-      'authentication',
       'employee',
-      'admin'
+      'admin',
+      'authentication'
     ]) // setter
     .config(configSetup);
 
