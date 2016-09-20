@@ -5,6 +5,7 @@ var express   = require('express'),
 
 require('./server/config/express')(app, config);
 require('./server/config/routes')(app, config);
+require('./server/api/routes')(app, config);
 
 app.listen(config.port);
 console.log('Listening on port ' + config.port + '...');

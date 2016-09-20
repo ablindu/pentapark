@@ -4,6 +4,8 @@
   angular
     .module('pentapark', [
       'ui.router',
+      'shared',
+      'authentication',
       'employee',
       'admin'
     ]) // setter

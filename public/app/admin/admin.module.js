@@ -5,7 +5,7 @@
 
   function configSetup($stateProvider) {
     $stateProvider
-    .state('admin',{
+    .state('shared.admin',{
         url:'/admin',
         controller: 'AdminController',
         controllerAs: 'admin',

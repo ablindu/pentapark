@@ -1,15 +1,15 @@
 (function () {
   angular
-    .module('employee', []) 
+    .module('employee', [])
     .config(configSetup);
 
   function configSetup($stateProvider) {
     $stateProvider
-    .state('employee',{
+    .state('shared.employee',{
         url:'/employee',
         controller: 'EmployeeController',
         controllerAs: 'employee',
-        templateUrl:'public/app/employee/partials/employee.html'
+        templateUrl:'public/app/employee/partials/employee'
     })
   }
 
